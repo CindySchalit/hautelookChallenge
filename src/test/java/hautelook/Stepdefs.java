@@ -17,31 +17,26 @@ public class Stepdefs {
 
     @Then("^My subtotal should be \"([^\"]*)\" dollars$")
     public void mySubtotalShouldBeDollars(int subtotal) throws Throwable {
-        Assert.assertTrue("Total is " + this .cart.subtotal(), this.cart.subtotal() == subtotal);
+        Assert.assertTrue("Total is " + this.cart.subtotal(), this.cart.subtotal() == subtotal);
     }
 
     @When("^I add a \"([^\"]*)\" dollar item named \"([^\"]*)\"$")
     public void iAddADollarItemNamed(int itemCost, String productName) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        cart.addItem(productName, itemCost);
     }
 
     @Given("^I have a cart with a \"([^\"]*)\" dollar item named \"([^\"]*)\"$")
     public void iHaveACartWithADollarItemNamed(int itemCost, String productName) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        cart.addItem(productName, itemCost);
     }
 
     @Then("^My quantity of products named \"([^\"]*)\" should be \"([^\"]*)\"$")
     public void myQuantityOfProductsNamedShouldBe(String productName, int itemCount) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
     }
 
     @When("^I apply a \"([^\"]*)\" percent coupon code$")
     public void iApplyAPercentCouponCode(int percentOff) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        cart.applyDiscount(percentOff);
     }
 
     @When("^I add a \"([^\"]*)\" dollar \"([^\"]*)\" lb item named \"([^\"]*)\"$")
