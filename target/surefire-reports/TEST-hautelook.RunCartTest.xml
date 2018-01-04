@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="65" failures="0" name="hautelook.RunCartTest" time="0.025" errors="0" skipped="0">
+<testsuite tests="65" failures="0" name="hautelook.RunCartTest" time="0.027" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="9.0.1+11"/>
@@ -63,50 +63,50 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Scenario: Empty cart subtotal" name="Given I have an empty cart" time="0.003"/>
+  <testcase classname="Scenario: Empty cart subtotal" name="Given I have an empty cart" time="0.004"/>
   <testcase classname="Scenario: Empty cart subtotal" name="Then My subtotal should be &quot;0&quot; dollars" time="0"/>
-  <testcase classname="Scenario: Empty cart subtotal" name="Scenario: Empty cart subtotal" time="0.001"/>
-  <testcase classname="Scenario: Add a 10 dollar item to an empty cart" name="Given I have an empty cart" time="0.001"/>
+  <testcase classname="Scenario: Empty cart subtotal" name="Scenario: Empty cart subtotal" time="0"/>
+  <testcase classname="Scenario: Add a 10 dollar item to an empty cart" name="Given I have an empty cart" time="0.003"/>
   <testcase classname="Scenario: Add a 10 dollar item to an empty cart" name="When I add a &quot;10&quot; dollar item named &quot;shirt&quot;" time="0"/>
   <testcase classname="Scenario: Add a 10 dollar item to an empty cart" name="Then My subtotal should be &quot;10&quot; dollars" time="0"/>
   <testcase classname="Scenario: Add a 10 dollar item to an empty cart" name="Scenario: Add a 10 dollar item to an empty cart" time="0"/>
   <testcase classname="Scenario: Add an item that already exists in the cart" name="Given I have a cart with a &quot;5&quot; dollar item named &quot;tee&quot;" time="0"/>
-  <testcase classname="Scenario: Add an item that already exists in the cart" name="When I add a &quot;5&quot; dollar item named &quot;tee&quot;" time="0.001"/>
+  <testcase classname="Scenario: Add an item that already exists in the cart" name="When I add a &quot;5&quot; dollar item named &quot;tee&quot;" time="0"/>
   <testcase classname="Scenario: Add an item that already exists in the cart" name="Then My quantity of products named &quot;tee&quot; should be &quot;2&quot;" time="0"/>
-  <testcase classname="Scenario: Add an item that already exists in the cart" name="Scenario: Add an item that already exists in the cart" time="0"/>
+  <testcase classname="Scenario: Add an item that already exists in the cart" name="Scenario: Add an item that already exists in the cart" time="0.001"/>
   <testcase classname="Scenario: Add an item twice should show quantity of 2" name="Given I have an empty cart" time="0"/>
   <testcase classname="Scenario: Add an item twice should show quantity of 2" name="And I add a &quot;100&quot; dollar item named &quot;jewelry&quot;" time="0"/>
   <testcase classname="Scenario: Add an item twice should show quantity of 2" name="And I add a &quot;5&quot; dollar item named &quot;belt&quot;" time="0"/>
   <testcase classname="Scenario: Add an item twice should show quantity of 2" name="And I add a &quot;100&quot; dollar item named &quot;jewelry&quot;" time="0"/>
   <testcase classname="Scenario: Add an item twice should show quantity of 2" name="Then My quantity of products named &quot;jewelry&quot; should be &quot;2&quot;" time="0"/>
-  <testcase classname="Scenario: Add an item twice should show quantity of 2" name="Scenario: Add an item twice should show quantity of 2" time="0"/>
+  <testcase classname="Scenario: Add an item twice should show quantity of 2" name="Scenario: Add an item twice should show quantity of 2" time="0.001"/>
   <testcase classname="Scenario: Add a 10 dollar item to a cart with a 5 dollar item" name="Given I have a cart with a &quot;5&quot; dollar item named &quot;tee&quot;" time="0"/>
   <testcase classname="Scenario: Add a 10 dollar item to a cart with a 5 dollar item" name="When I add a &quot;10&quot; dollar item named &quot;shirt&quot;" time="0"/>
   <testcase classname="Scenario: Add a 10 dollar item to a cart with a 5 dollar item" name="Then My subtotal should be &quot;15&quot; dollars" time="0"/>
   <testcase classname="Scenario: Add a 10 dollar item to a cart with a 5 dollar item" name="Scenario: Add a 10 dollar item to a cart with a 5 dollar item" time="0.001"/>
   <testcase classname="Scenario: Apply a 10 percent coupon code to a cart with 10 dollars of items" name="Given I have a cart with a &quot;10&quot; dollar item named &quot;shirt&quot;" time="0"/>
   <testcase classname="Scenario: Apply a 10 percent coupon code to a cart with 10 dollars of items" name="When I apply a &quot;10&quot; percent coupon code" time="0"/>
-  <testcase classname="Scenario: Apply a 10 percent coupon code to a cart with 10 dollars of items" name="Then My subtotal should be &quot;9&quot; dollars" time="0.001"/>
-  <testcase classname="Scenario: Apply a 10 percent coupon code to a cart with 10 dollars of items" name="Scenario: Apply a 10 percent coupon code to a cart with 10 dollars of items" time="0.002"/>
-  <testcase classname="Scenario: Add a 2nd item to a cart after applying a discount" name="Given I have an empty cart" time="0.001"/>
+  <testcase classname="Scenario: Apply a 10 percent coupon code to a cart with 10 dollars of items" name="Then My subtotal should be &quot;9&quot; dollars" time="0"/>
+  <testcase classname="Scenario: Apply a 10 percent coupon code to a cart with 10 dollars of items" name="Scenario: Apply a 10 percent coupon code to a cart with 10 dollars of items" time="0.001"/>
+  <testcase classname="Scenario: Add a 2nd item to a cart after applying a discount" name="Given I have an empty cart" time="0"/>
   <testcase classname="Scenario: Add a 2nd item to a cart after applying a discount" name="When I add a &quot;10&quot; dollar item named &quot;tank&quot;" time="0"/>
   <testcase classname="Scenario: Add a 2nd item to a cart after applying a discount" name="Then My subtotal should be &quot;10&quot; dollars" time="0"/>
-  <testcase classname="Scenario: Add a 2nd item to a cart after applying a discount" name="And I apply a &quot;10&quot; percent coupon code" time="0.001"/>
+  <testcase classname="Scenario: Add a 2nd item to a cart after applying a discount" name="And I apply a &quot;10&quot; percent coupon code" time="0"/>
   <testcase classname="Scenario: Add a 2nd item to a cart after applying a discount" name="And I add a &quot;30&quot; dollar item named &quot;dress&quot;" time="0"/>
-  <testcase classname="Scenario: Add a 2nd item to a cart after applying a discount" name="Then My subtotal should be &quot;36&quot; dollars" time="0"/>
+  <testcase classname="Scenario: Add a 2nd item to a cart after applying a discount" name="Then My subtotal should be &quot;36&quot; dollars" time="0.001"/>
   <testcase classname="Scenario: Add a 2nd item to a cart after applying a discount" name="Scenario: Add a 2nd item to a cart after applying a discount" time="0.001"/>
   <testcase classname="Scenario: When order is under $100, and all items under 10 lb, then shipping is $5 flat" name="Given I have an empty cart" time="0"/>
-  <testcase classname="Scenario: When order is under $100, and all items under 10 lb, then shipping is $5 flat" name="When I add a &quot;78&quot; dollar &quot;2&quot; lb item named &quot;dress&quot;" time="0.004"/>
+  <testcase classname="Scenario: When order is under $100, and all items under 10 lb, then shipping is $5 flat" name="When I add a &quot;78&quot; dollar &quot;2&quot; lb item named &quot;dress&quot;" time="0"/>
   <testcase classname="Scenario: When order is under $100, and all items under 10 lb, then shipping is $5 flat" name="And I add a &quot;20&quot; dollar &quot;1&quot; lb item named &quot;skirt&quot;" time="0"/>
   <testcase classname="Scenario: When order is under $100, and all items under 10 lb, then shipping is $5 flat" name="Then My subtotal should be &quot;98&quot; dollars" time="0"/>
   <testcase classname="Scenario: When order is under $100, and all items under 10 lb, then shipping is $5 flat" name="And My total should be &quot;103&quot; dollars" time="0"/>
-  <testcase classname="Scenario: When order is under $100, and all items under 10 lb, then shipping is $5 flat" name="Scenario: When order is under $100, and all items under 10 lb, then shipping is $5 flat" time="0.001"/>
-  <testcase classname="Scenario: When order is under $100, and all items are 10 lb or more, then flat rate should not be charged" name="Given I have an empty cart" time="0.001"/>
-  <testcase classname="Scenario: When order is under $100, and all items are 10 lb or more, then flat rate should not be charged" name="When I add a &quot;49&quot; dollar &quot;50&quot; lb item named &quot;dresser&quot;" time="0.001"/>
+  <testcase classname="Scenario: When order is under $100, and all items under 10 lb, then shipping is $5 flat" name="Scenario: When order is under $100, and all items under 10 lb, then shipping is $5 flat" time="0"/>
+  <testcase classname="Scenario: When order is under $100, and all items are 10 lb or more, then flat rate should not be charged" name="Given I have an empty cart" time="0"/>
+  <testcase classname="Scenario: When order is under $100, and all items are 10 lb or more, then flat rate should not be charged" name="When I add a &quot;49&quot; dollar &quot;50&quot; lb item named &quot;dresser&quot;" time="0"/>
   <testcase classname="Scenario: When order is under $100, and all items are 10 lb or more, then flat rate should not be charged" name="When I add a &quot;49&quot; dollar &quot;10&quot; lb item named &quot;indoor rug&quot;" time="0"/>
-  <testcase classname="Scenario: When order is under $100, and all items are 10 lb or more, then flat rate should not be charged" name="Then My total should be &quot;138&quot; dollars" time="0.001"/>
-  <testcase classname="Scenario: When order is under $100, and all items are 10 lb or more, then flat rate should not be charged" name="Scenario: When order is under $100, and all items are 10 lb or more, then flat rate should not be charged" time="0.001"/>
-  <testcase classname="Scenario: When order is $100 or more, and each individual item is under 10 lb, then shipping is free" name="Given I have an empty cart" time="0"/>
+  <testcase classname="Scenario: When order is under $100, and all items are 10 lb or more, then flat rate should not be charged" name="Then My total should be &quot;138&quot; dollars" time="0.004"/>
+  <testcase classname="Scenario: When order is under $100, and all items are 10 lb or more, then flat rate should not be charged" name="Scenario: When order is under $100, and all items are 10 lb or more, then flat rate should not be charged" time="0.004"/>
+  <testcase classname="Scenario: When order is $100 or more, and each individual item is under 10 lb, then shipping is free" name="Given I have an empty cart" time="0.003"/>
   <testcase classname="Scenario: When order is $100 or more, and each individual item is under 10 lb, then shipping is free" name="When I add a &quot;68&quot; dollar &quot;2&quot; lb item named &quot;dress&quot;" time="0"/>
   <testcase classname="Scenario: When order is $100 or more, and each individual item is under 10 lb, then shipping is free" name="And I add a &quot;20&quot; dollar &quot;1&quot; lb item named &quot;skirt&quot;" time="0"/>
   <testcase classname="Scenario: When order is $100 or more, and each individual item is under 10 lb, then shipping is free" name="And I add a &quot;20&quot; dollar &quot;1&quot; lb item named &quot;skirt&quot;" time="0"/>
@@ -117,15 +117,15 @@
   <testcase classname="Scenario: Items that are 10 lb or more always cost $20 each to ship" name="Given I have an empty cart" time="0"/>
   <testcase classname="Scenario: Items that are 10 lb or more always cost $20 each to ship" name="When I add a &quot;80&quot; dollar &quot;2&quot; lb item named &quot;dress&quot;" time="0"/>
   <testcase classname="Scenario: Items that are 10 lb or more always cost $20 each to ship" name="And I add a &quot;10&quot; dollar &quot;1&quot; lb item named &quot;tee&quot;" time="0"/>
-  <testcase classname="Scenario: Items that are 10 lb or more always cost $20 each to ship" name="And I add a &quot;50&quot; dollar &quot;100&quot; lb item named &quot;couch&quot;" time="0.001"/>
+  <testcase classname="Scenario: Items that are 10 lb or more always cost $20 each to ship" name="And I add a &quot;50&quot; dollar &quot;100&quot; lb item named &quot;couch&quot;" time="0"/>
   <testcase classname="Scenario: Items that are 10 lb or more always cost $20 each to ship" name="Then My subtotal should be &quot;140&quot; dollars" time="0"/>
   <testcase classname="Scenario: Items that are 10 lb or more always cost $20 each to ship" name="And My total should be &quot;160&quot; dollars" time="0"/>
-  <testcase classname="Scenario: Items that are 10 lb or more always cost $20 each to ship" name="Scenario: Items that are 10 lb or more always cost $20 each to ship" time="0.001"/>
+  <testcase classname="Scenario: Items that are 10 lb or more always cost $20 each to ship" name="Scenario: Items that are 10 lb or more always cost $20 each to ship" time="0"/>
   <testcase classname="Scenario: Orders under $100 with multiple items that are 10 lb or more" name="Given I have an empty cart" time="0"/>
   <testcase classname="Scenario: Orders under $100 with multiple items that are 10 lb or more" name="When I add a &quot;10&quot; dollar &quot;1&quot; lb item named &quot;tee&quot;" time="0"/>
   <testcase classname="Scenario: Orders under $100 with multiple items that are 10 lb or more" name="And I add a &quot;25&quot; dollar &quot;15&quot; lb item named &quot;lamp&quot;" time="0"/>
-  <testcase classname="Scenario: Orders under $100 with multiple items that are 10 lb or more" name="And I add a &quot;50&quot; dollar &quot;25&quot; lb item named &quot;end table&quot;" time="0"/>
-  <testcase classname="Scenario: Orders under $100 with multiple items that are 10 lb or more" name="Then My subtotal should be &quot;85&quot; dollars" time="0"/>
+  <testcase classname="Scenario: Orders under $100 with multiple items that are 10 lb or more" name="And I add a &quot;50&quot; dollar &quot;25&quot; lb item named &quot;end table&quot;" time="0.001"/>
+  <testcase classname="Scenario: Orders under $100 with multiple items that are 10 lb or more" name="Then My subtotal should be &quot;85&quot; dollars" time="0.002"/>
   <testcase classname="Scenario: Orders under $100 with multiple items that are 10 lb or more" name="And My total should be &quot;130&quot; dollars" time="0"/>
-  <testcase classname="Scenario: Orders under $100 with multiple items that are 10 lb or more" name="Scenario: Orders under $100 with multiple items that are 10 lb or more" time="0.001"/>
+  <testcase classname="Scenario: Orders under $100 with multiple items that are 10 lb or more" name="Scenario: Orders under $100 with multiple items that are 10 lb or more" time="0"/>
 </testsuite>
