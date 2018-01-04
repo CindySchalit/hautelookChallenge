@@ -8,27 +8,28 @@ import java.util.*;
 public class Cart {
   //declare variables
   double totalBeforeTax = 0.0;
-  HashMap<String, PriceQuantity> myCart = new HashMap<String, PriceQuantity>();
+  HashMap<String, Details> myCart = new HashMap<String, Details>();
   boolean discountApplied = false;
   int discount = 0;
+  int totalWeight = 0;
 
   // define methods
   public double subtotal() {
     return totalBeforeTax;
   }
 
-  public void addItem(String name, int price) {
+  public void addItem(String name, int price, int weight) {
     // item not in cart
     if ( !myCart.containsKey(name) ) {
       // create item and add to cart
-      PriceQuantity newItemDetails = new PriceQuantity(price, 1);
+      Details newItemDetails = new Details(price, 1, weight);
       myCart.put(name, newItemDetails);
-    }
-
-    // item already in cart
-    else {
+    } else { // item already in cart
       myCart.get(name).incrementQuantity();
     }
+
+    // increase total weight
+    totalWeight += myCart.get(name).getWeight();
 
     if (discountApplied) {
       totalBeforeTax += price * (1 - discount * 0.01);

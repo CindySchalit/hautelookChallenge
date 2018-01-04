@@ -22,12 +22,12 @@ public class Stepdefs {
 
     @When("^I add a \"([^\"]*)\" dollar item named \"([^\"]*)\"$")
     public void iAddADollarItemNamed(int itemCost, String productName) throws Throwable {
-        cart.addItem(productName, itemCost);
+        cart.addItem(productName, itemCost, 0);
     }
 
     @Given("^I have a cart with a \"([^\"]*)\" dollar item named \"([^\"]*)\"$")
     public void iHaveACartWithADollarItemNamed(int itemCost, String productName) throws Throwable {
-        cart.addItem(productName, itemCost);
+        cart.addItem(productName, itemCost, 0);
     }
 
     @Then("^My quantity of products named \"([^\"]*)\" should be \"([^\"]*)\"$")
@@ -41,13 +41,10 @@ public class Stepdefs {
 
     @When("^I add a \"([^\"]*)\" dollar \"([^\"]*)\" lb item named \"([^\"]*)\"$")
     public void iAddADollarItemWithWeight(int itemCost, int itemWeight, String productName) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        cart.addItem(productName, itemCost, itemWeight);
     }
 
     @Then("^My total should be \"([^\"]*)\" dollars$")
     public void myTotalShouldBeDollars(int total) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
     }
 }
